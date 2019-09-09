@@ -36,18 +36,18 @@ long_description = description
 # https://github.com/mitsuhiko/flask/blob/master/setup.py
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
 
-with open('songbird/__init__.py', 'rb') as f:
+with open('gert/__init__.py', 'rb') as f:
     hit = _version_re.search(f.read().decode('utf-8')).group(1)
     version = str(ast.literal_eval(hit))
 
-setup(name='songbird',
+setup(name='gert',
       version=version,
       description=description,
       long_description=long_description,
       long_description_content_type='text/markdown',
-      author="gneiss development team",
+      author="gert development team",
       author_email="jamietmorton@gmail.com",
-      maintainer="gneiss development team",
+      maintainer="gert development team",
       maintainer_email="jamietmorton@gmail.com",
       packages=find_packages(),
       setup_requires=['numpy >= 1.9.2'],
